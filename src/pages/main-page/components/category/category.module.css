@@ -1,0 +1,18 @@
+.category {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.categoryTitle {
+    color: #838383;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.categoryItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}

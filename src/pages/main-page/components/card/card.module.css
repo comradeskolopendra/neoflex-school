@@ -1,0 +1,123 @@
+.card {
+    width: 350px;
+    height: 407px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 16px 18px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    transition: all 0.05s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.05s ease-in-out;
+}
+
+.cardTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.itemName {
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.prices {
+    margin-bottom: 25px;
+}
+
+.prices p {
+    margin: 0;
+    text-align: right;
+    line-height: 20px;
+    color: #FFA542;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+}
+
+.prices span {
+    color: #FFCE7F;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: line-through;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+}
+
+.itemOrder {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemImage1,
+.itemImage2,
+.itemImage3,
+.itemImage4,
+.itemImage5,
+.itemImage6,
+.itemImage7,
+.itemImage8 {
+    width: 219.61px;
+}
+
+.itemImage9 {
+    width: 201px;
+}
+
+.cardBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rateContainer {
+    display: flex;
+}
+
+.rate {
+    color: #838383;
+    font-size: 17px;
+    margin: 0 0 0 10px;
+}
+
+.buyButton {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.buyButton::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    width: 0%;
+    background: black;
+    height: 1px;
+    content: "";
+}
+
+.buyButton:hover::after {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    height: 1px;
+}

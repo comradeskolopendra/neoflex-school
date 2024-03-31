@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: fit-content;
+}
+
+.item label {
+    font-size: 24px;
+}
+
+.item input {
+    padding: 15px 10px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    margin-right: 16px;
+    font-size: 20px;
+}
+
+.item input:focus {
+    border: 1px solid #FFA542;
+    outline: none;
+}
+
+.item button {
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    border: none;
+    background: none;
+}

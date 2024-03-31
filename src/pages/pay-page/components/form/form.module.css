@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rowInputs {
+    display: flex;
+    height: fit-content;
+}
+
+.rowInputs span {
+    height: 50px;
+    width: 1px;
+    margin: 0 15px;
+    background: black;
+}

@@ -1,0 +1,23 @@
+.link {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+    opacity: 0.5;
+}
+
+.quantity {
+    position: absolute;
+    right: -9px;
+    top: -18px;
+    background: #FFA542;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    line-height: 18px;
+    border-radius: 50%;
+}

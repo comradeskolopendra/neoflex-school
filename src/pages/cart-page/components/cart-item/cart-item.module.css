@@ -1,0 +1,91 @@
+.item {
+    padding: 18px;
+    border-radius: 30px;
+    background: white;
+    margin-bottom: 16px;
+    width: 650px;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+
+.leftside {
+    display: flex;
+    align-items: center;
+}
+
+.itemInfo {
+    margin-left: 15px;
+}
+
+.deleteAll {
+    position: absolute;
+    right: 18px;
+    border: none;
+    background: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.deleteAll:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0 0 12px 0;
+}
+
+.price {
+    font-weight: 600;
+    color: #AAAAAA;
+    font-size: 15px;
+    margin: 0;
+    line-height: 18px;
+}
+
+.itemImage {
+    width: 146px;
+}
+
+.itemImageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: fit-content;
+}
+
+.controlsQuantity {
+    display: flex;
+    margin-top: 15px;
+    align-self: center;
+    align-items: center;
+}
+
+.controlsQuantity p {
+    margin: 0 25px;
+    text-align: center;
+}
+
+.controlsQuantity button {
+    background: #FFCE7F;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.controlsQuantity button:hover {
+    background: #FFA542;
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,33 @@
+.main {
+    margin-top: 30px;
+    max-width: 1110px;
+    margin: 30px auto 0;
+    padding-bottom: 170px;
+}
+
+.title {
+    color: #1C1C27;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.nullCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}

@@ -15,7 +15,7 @@ import headphones6 from "../../../../assets/images/headphones-6.png";
 import headphones7 from "../../../../assets/images/headphones-7.png";
 import headphones8 from "../../../../assets/images/headphones-8.png";
 import headphones9 from "../../../../assets/images/headphones-9.png";
-import { numberFormatDeclimal } from "../../../../helpers/helper";
+import { numberFormatDeclimal } from "../../../../helpers/helpers";
 
 const images = [
     headphones1,

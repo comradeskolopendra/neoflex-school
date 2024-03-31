@@ -3,7 +3,7 @@ import { FC } from "react";
 import styles from "./payment.module.css";
 import { useSelector } from "react-redux";
 import { getStateCartItems } from "../../selectors";
-import { numberFormatDeclimal } from "../../../../helpers/helper";
+import { numberFormatDeclimal } from "../../../../helpers/helpers";
 import { useNavigate } from "react-router";
 
 const Payment: FC = () => {

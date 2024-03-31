@@ -16,3 +16,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
+
+@media screen and (max-width: 1240px) {
+    .category {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .categoryItems {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .categoryItems {
+        grid-template-columns: 1fr;
+    }
+}

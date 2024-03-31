@@ -31,3 +31,17 @@
     align-items: center;
     font-size: 42px;
 }
+
+@media screen and (max-width: 1110px) {
+    .main {
+        padding: 0 16px 260px 16px;
+    }
+
+    .contents {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 100%;
+    }
+}

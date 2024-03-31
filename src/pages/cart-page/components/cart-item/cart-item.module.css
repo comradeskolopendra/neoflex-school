@@ -89,3 +89,9 @@
     background: #FFA542;
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 1110px) {
+    .item {
+        width: 100%;
+    }
+}

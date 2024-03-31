@@ -13,11 +13,6 @@
     transition: all 0.05s ease-in-out;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    transition: all 0.05s ease-in-out;
-}
-
 .cardTop {
     display: flex;
     justify-content: center;
@@ -120,4 +115,10 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
     height: 1px;
+}
+
+@media screen and (max-width: 1240px) {
+    .card {
+        width: 100%;
+    }
 }

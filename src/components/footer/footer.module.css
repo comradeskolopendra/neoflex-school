@@ -30,6 +30,12 @@
 
 .social svg {
     margin-left: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social svg:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo {
@@ -81,4 +87,25 @@
 
 .rightsideLinks p:first-of-type {
     margin: 0 17px;
+}
+
+@media screen and (max-width: 1110px) {
+    .footer {
+        max-width: unset;
+        width: 100%;
+        left: unset;
+        flex-direction: column;
+        height: fit-content;
+        padding: 15px 25px;
+    }
+
+    .central {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .social {
+        width: 100%;
+        justify-content: center;
+    }
 }

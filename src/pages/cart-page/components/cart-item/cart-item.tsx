@@ -1,4 +1,4 @@
-import { FC, memo } from "react";
+import { FC } from "react";
 import { ICartItem } from "../../../../types/types";
 
 import styles from "./cart-item.module.css";
@@ -74,4 +74,4 @@ const CartItem: FC<CartItemProps> = ({ item }) => {
     )
 }
 
-export default memo(CartItem);
+export default CartItem;

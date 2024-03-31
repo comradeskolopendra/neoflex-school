@@ -30,3 +30,20 @@
     border: none;
     background: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .item {
+        flex-direction: column-reverse;
+        border-bottom: 1px solid black;
+        padding-bottom: 8px;
+    }
+
+    .item button {
+        right: 10px;
+        top: 45px;
+    }
+
+    .item input {
+        margin-right: 0;
+    }
+}

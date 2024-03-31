@@ -15,3 +15,13 @@
     margin: 0 15px;
     background: black;
 }
+
+@media screen and (max-width: 1024px) {
+    .rowInputs {
+        flex-direction: column;
+    }
+
+    .rowInputs span {
+        display: none;
+    }
+}

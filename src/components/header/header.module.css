@@ -32,3 +32,9 @@
 .cartLink {
     margin-left: 45px;
 }
+
+@media screen and (max-width: 1240px) {
+    .nav {
+        padding: 15px;
+    }
+}

@@ -29,9 +29,15 @@ const Footer: FC = () => {
             </section>
 
             <div className={styles.social}>
-                <SocialVKIcon />
-                <SocialWhatsAppIcon />
-                <SocialTelegramIcon />
+                <Link to={"https://vk.com"} target="_blank">
+                    <SocialVKIcon />
+                </Link>
+                <Link to={"https://web.whatsapp.com/"} target="_blank">
+                    <SocialWhatsAppIcon />
+                </Link>
+                <Link to={"https://t.me/tokygavakodaka"} target="_blank">
+                    <SocialTelegramIcon />
+                </Link>
             </div>
         </footer>
     )

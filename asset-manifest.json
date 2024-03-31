@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.25623899.css",
+    "main.js": "./static/js/main.9c3145be.js",
+    "static/media/Montserrat.ttf": "./static/media/Montserrat.7e687123cd4528224ce5.ttf",
+    "static/media/headphones-6.png": "./static/media/headphones-6.9446d923007fdde75679.png",
+    "static/media/headphones-3.png": "./static/media/headphones-3.353bad6fcda93567cd45.png",
+    "static/media/headphones-9.png": "./static/media/headphones-9.74bb9a03927339046af6.png",
+    "static/media/headphones-8.png": "./static/media/headphones-8.5f361bc8d47546fbb2de.png",
+    "static/media/headphones-1.png": "./static/media/headphones-1.4286b503242bf3c8f5fe.png",
+    "static/media/headphones-7.png": "./static/media/headphones-7.817f87b50403e5113c5c.png",
+    "static/media/headphones-4.png": "./static/media/headphones-4.eec9ed0614601a0efa29.png",
+    "static/media/headphones-5.png": "./static/media/headphones-5.dbc1fd5dfa485f2821ae.png",
+    "static/media/headphones-2.png": "./static/media/headphones-2.1602a9bb7c6183bb25e3.png",
+    "index.html": "./index.html",
+    "main.25623899.css.map": "./static/css/main.25623899.css.map",
+    "main.9c3145be.js.map": "./static/js/main.9c3145be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25623899.css",
+    "static/js/main.9c3145be.js"
+  ]
+}

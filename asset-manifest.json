@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.25623899.css",
-    "main.js": "./static/js/main.9c3145be.js",
+    "main.css": "./static/css/main.ad066e08.css",
+    "main.js": "./static/js/main.ab519621.js",
     "static/media/Montserrat.ttf": "./static/media/Montserrat.7e687123cd4528224ce5.ttf",
     "static/media/headphones-6.png": "./static/media/headphones-6.9446d923007fdde75679.png",
     "static/media/headphones-3.png": "./static/media/headphones-3.353bad6fcda93567cd45.png",
@@ -13,11 +13,11 @@
     "static/media/headphones-5.png": "./static/media/headphones-5.dbc1fd5dfa485f2821ae.png",
     "static/media/headphones-2.png": "./static/media/headphones-2.1602a9bb7c6183bb25e3.png",
     "index.html": "./index.html",
-    "main.25623899.css.map": "./static/css/main.25623899.css.map",
-    "main.9c3145be.js.map": "./static/js/main.9c3145be.js.map"
+    "main.ad066e08.css.map": "./static/css/main.ad066e08.css.map",
+    "main.ab519621.js.map": "./static/js/main.ab519621.js.map"
   },
   "entrypoints": [
-    "static/css/main.25623899.css",
-    "static/js/main.9c3145be.js"
+    "static/css/main.ad066e08.css",
+    "static/js/main.ab519621.js"
   ]
 }

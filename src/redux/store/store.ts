@@ -13,7 +13,10 @@ interface IStore {
         wired: ICategory;
     };
 
-    cart: ICartItem[]
+    cart: ICartItem[];
+
+    currentItem: IShopItem;
+    isModalOpened: boolean;
 }
 
 const initialState: IStore = {
@@ -39,7 +42,15 @@ const initialState: IStore = {
         }
     },
 
-    cart: []
+    cart: [],
+
+    currentItem: {
+        id: 0,
+        price: 0,
+        rate: 0,
+        title: ""
+    },
+    isModalOpened: false
 }
 
 const mainSlice = createSlice({
@@ -76,6 +87,17 @@ const mainSlice = createSlice({
             state.cart = [...state.cart.filter(item => item.id !== id)];
 
             return state
+        },
+
+        setCurrentItem(state, action: PayloadAction<IShopItem>) {
+            state.currentItem = action.payload;
+            return state;
+        },
+
+        changeModalOpened(state, action: PayloadAction<boolean>) {
+            state.isModalOpened = action.payload;
+
+            return state;
         }
     }
 })
@@ -86,7 +108,9 @@ export type StoreActions = ReturnType<StoreActionCreators[keyof StoreActionCreat
 export const {
     setCartItem,
     removeCartItemOne,
-    removeCartItemAll
+    removeCartItemAll,
+    changeModalOpened,
+    setCurrentItem
 } = mainSlice.actions;
 
 export default mainSlice.reducer;

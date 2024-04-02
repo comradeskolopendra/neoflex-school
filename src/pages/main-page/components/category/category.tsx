@@ -8,9 +8,10 @@ import { IShopItem } from "../../../../types/types";
 interface CategoryProps {
     items: IShopItem[];
     categoryName: string;
+    images: string[];
 }
 
-const Category: FC<CategoryProps> = ({ items, categoryName }) => {
+const Category: FC<CategoryProps> = ({ items, categoryName, images }) => {
 
     return (
         <div className={styles.category}>
@@ -21,6 +22,7 @@ const Category: FC<CategoryProps> = ({ items, categoryName }) => {
                     <Card
                         key={item.id}
                         item={item}
+                        images={images}
                     />
                 ))}
             </section>

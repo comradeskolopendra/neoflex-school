@@ -1,0 +1,18 @@
+.modal {
+    width: 450px;
+    height: auto;
+    padding: 16px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    filter: invert(1);
+
+    top: -25px;
+    right: -25px;
+
+    cursor: pointer;
+}

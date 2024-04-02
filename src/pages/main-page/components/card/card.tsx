@@ -3,45 +3,31 @@ import styles from "./card.module.css";
 
 import { StarIcon } from "./icons";
 
-import headphones1 from "../../../../assets/images/headphones-1.png";
-import headphones2 from "../../../../assets/images/headphones-2.png";
-import headphones3 from "../../../../assets/images/headphones-3.png";
-import headphones4 from "../../../../assets/images/headphones-4.png";
-import headphones5 from "../../../../assets/images/headphones-5.png";
-import headphones6 from "../../../../assets/images/headphones-6.png";
-import headphones7 from "../../../../assets/images/headphones-7.png";
-import headphones8 from "../../../../assets/images/headphones-8.png";
-import headphones9 from "../../../../assets/images/headphones-9.png";
 import { useAppDispatch } from "../../../../redux/hooks";
-import { setCartItem } from "../../../../redux/store/store";
+import { setCartItem, changeModalOpened, setCurrentItem } from "../../../../redux/store/store";
 import { IShopItem } from "../../../../types/types";
-
-const images = [
-    headphones1,
-    headphones2,
-    headphones3,
-    headphones4,
-    headphones5,
-    headphones6,
-    headphones7,
-    headphones8,
-    headphones9
-];
 
 interface CardProps {
     item: IShopItem;
+    images: string[];
 }
 
-const Card: FC<CardProps> = ({ item }) => {
+const Card: FC<CardProps> = ({ item, images }) => {
     const dispatch = useAppDispatch();
 
-    const handleOnClick = () => {
+    const handleBuyItem = () => {
         dispatch(setCartItem(item));
     };
+
+    const handleClickMoreInfo = () => {
+        dispatch(changeModalOpened(true));
+        dispatch(setCurrentItem(item));
+    }
 
     return (
         <div className={styles.card}>
             <div className={styles.cardTop}>
+                <button onClick={handleClickMoreInfo} className={styles.buyButton}>Больше информации</button>
                 <img src={images[item.id - 1]} className={styles[`itemImage${item.id}`]} />
             </div>
 
@@ -61,7 +47,7 @@ const Card: FC<CardProps> = ({ item }) => {
                             {item.onSalePrice && <span>{item.onSalePrice} ₽</span>}
                         </p>
                     </div>
-                    <button onClick={handleOnClick} className={styles.buyButton}>Купить</button>
+                    <button onClick={handleBuyItem} className={styles.buyButton}>Купить</button>
                 </div>
             </div>
         </div>
